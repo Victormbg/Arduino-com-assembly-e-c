@@ -1,7 +1,7 @@
 <h1>ARDUINO PLACA E INFORMAÇOES</h1>
 
 <p align="center">
-<img src="/img/diagrama.png" width="700px"><br>
+<img src="/img/diagrama.png" width="800px"><br>
 </p>
 
 DDR
@@ -18,13 +18,13 @@ PORT
 Os registradores do tipo PORT são responsáveis por determinar se um pino está 
 definido como alto (HIGH) ou baixo (LOW).
 <p align="center">
-<img src="/img/portb.png" width="800px"><br>
+<img src="/img/portb.png" width="900px"><br>
 </p>
 
 PIN
 Os registradores do tipo PIN são responsáveis por guardar o estado lógico de um pino.
 <p align="center">
-<img src="/img/pinb.png" width="800px"><br>
+<img src="/img/pinb.png" width="900px"><br>
 </p>
 
 link: https://portal.vidadesilicio.com.br/entrada-e-saida-manipulando-registradores/

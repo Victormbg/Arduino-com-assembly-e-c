@@ -1,32 +1,38 @@
-; Blink LED (Arduino Uno pin 8 e 9)
-
 #define __SFR_OFFSET 0
- 
 #include "avr/io.h"
-
 .global start
 .global blink
 
 start:
 blink:
+  
+  ldi   r24,250 ; Define o delay em ms(MAXIMO DE 255)
+  call  delay_n_ms
+  
+  ldi r24,0b0000011 ; LIGANDO O LED 8 E 9 
+  sts 0x25, r24
 
+  ldi r24,0b0000011 ; DEFININDO QUE SAO OS PINOS 8 E 9 
+  sts 0x24, r24
+  
+  ldi   r24,250
+  call  delay_n_ms ; CHAMANDO O "FUNCTION" DELAY
+  
+  ldi r24,0b0000000 ; DESLIGANDO O LED 8 E 9 
+  sts 0x25, r24
 
-ldi r24,0b0000011
-sts 0x25, r24
+  ldi r24,0b0000011 ; DEFININDO QUE SAO OS PINOS 8 E 9 
+  sts 0x24, r24
+  ret
 
-ldi r24,0b0000011
-sts 0x24, r24
+delay_n_ms:
+  ldi   31, 3000>>8 ; high(3000)
+  ldi   30, 3000&255  ; low(3000)
 
-cpi r24, 0b00000000         ; Check if r16 is set to LED OFF
-    brbs 1, switchon        ; If it is, change it to ON
-    ldi r24, 0b00000000     ; Otherwise, change it to OFF
-    out 0x05, r16           ; Set the LED to the new state
-    rjmp loop               ; Run the clock
-switchon:
-    ldi r24, 0b00000001     ; Set r16 to LED ON value
-    out 0x05, r24           ; Set the LED to the new state
-    rjmp loop               ; Run the clock
-
-loop:
-jmp loop
+delaylp:
+  sbiw    r30, 1
+  brne    delaylp
+  subi    r20, 1
+  brne    delay_n_ms
+  ret
  

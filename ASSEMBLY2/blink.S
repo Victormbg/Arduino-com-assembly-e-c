@@ -10,7 +10,7 @@
 start:
 blink:
 
-ldi r24,0b1100000 
+ldi r24,0b1100001 
 sts 0x25, r24
 
 ldi r24,0b1100000

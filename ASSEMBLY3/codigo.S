@@ -6,13 +6,14 @@
 
 start:
 codigo:
-  ldi   r24,250 ; Define o delay em ms(MAXIMO DE 255)
-  call  delay_n_ms
-  call liga  
-  ldi   r24,250
-  call  delay_n_ms ; CHAMANDO O "FUNCTION" DELAY
-  call desliga  
-  ret
+
+    ldi   r24,250 
+    call  delay_n_ms
+    call liga  
+    ldi   r24,250
+    call  delay_n_ms 
+    call desliga  
+    ret
 
 liga:
     ldi r24,0b0000001 
@@ -20,11 +21,11 @@ liga:
     ldi r24,0b0000001
     sts 0x24, r24
 desliga:
-    ldi r24,0b0000001 
+    ldi r24,0b0000000 
     sts 0x25, r24
     ldi r24,0b0000001
     sts 0x24, r24
-    
+
 delay_n_ms:
   ldi   31, 3000>>8 ; high(3000)
   ldi   30, 3000&255  ; low(3000)

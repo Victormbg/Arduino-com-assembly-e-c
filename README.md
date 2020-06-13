@@ -1,7 +1,7 @@
 <h1>ARDUINO PLACA E INFORMAÇOES</h1>
 
 <p align="center">
-<img src="/img/diagrama.png" width="500px"><br>
+<img src="/img/diagrama.png" width="700px"><br>
 </p>
 
 DDR
@@ -11,7 +11,7 @@ Cada bit do registrador DDR controla o estado do respectivo pino.
 Por exemplo: O bit 1 do registrador DDRB (DDB1) controlará o estado do pino PB1 e 
 consequentemente o pino D9 do Arduino Uno como mostrado no mapa.
 <p align="center">
-<img src="/img/ddrb.png" width="800px"><br>
+<img src="/img/ddrb.png" width="900px"><br>
 </p>
 
 PORT

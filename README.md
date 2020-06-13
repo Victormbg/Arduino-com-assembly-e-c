@@ -1,7 +1,7 @@
 <h1>ARDUINO PLACA E INFORMAÇOES</h1>
 
 <p align="center">
-<img src="/img/diagrama.png" width="300px"><br>
+<img src="/img/diagrama.png" width="500px"><br>
 </p>
 
 DDR
@@ -11,20 +11,20 @@ Cada bit do registrador DDR controla o estado do respectivo pino.
 Por exemplo: O bit 1 do registrador DDRB (DDB1) controlará o estado do pino PB1 e 
 consequentemente o pino D9 do Arduino Uno como mostrado no mapa.
 <p align="center">
-<img src="/img/ddrb.png" width="300px"><br>
+<img src="/img/ddrb.png" width="800px"><br>
 </p>
 
 PORT
 Os registradores do tipo PORT são responsáveis por determinar se um pino está 
 definido como alto (HIGH) ou baixo (LOW).
 <p align="center">
-<img src="/img/portb.png" width="300px"><br>
+<img src="/img/portb.png" width="800px"><br>
 </p>
 
 PIN
 Os registradores do tipo PIN são responsáveis por guardar o estado lógico de um pino.
 <p align="center">
-<img src="/img/pinb.png" width="300px"><br>
+<img src="/img/pinb.png" width="800px"><br>
 </p>
 
 link: https://portal.vidadesilicio.com.br/entrada-e-saida-manipulando-registradores/
@@ -47,13 +47,13 @@ PORTD mapeia as portas digitais de 0 a 7 do Arduino.
     PORTD - The Port D Data Register - read/write
     PIND - The Port D Input Pins Register - read only
 
-PORTB maps to Arduino digital pins 8 to 13 The two high bits (6 & 7) map to the crystal pins and are not usable
+PORTB mapeia para os pinos digitais Arduino 8 a 13 Os dois bits altos (6 e 7) mapeiam os pinos de cristal e não são utilizáveis
 
     DDRB - The Port B Data Direction Register - read/write
     PORTB - The Port B Data Register - read/write
     PINB - The Port B Input Pins Register - read only
 
-PORTC maps to Arduino analog pins 0 to 5. Pins 6 & 7 are only accessible on the Arduino Mini
+PORTC mapeia para os pinos analógicos 0 a 5. do Arduino Os pinos 6 e 7 são acessíveis apenas no Arduino Mini
 
     DDRC - The Port C Data Direction Register - read/write
     PORTC - The Port C Data Register - read/write

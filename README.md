@@ -66,7 +66,7 @@ Estes pinos de entrada/saída também são conhecidos como GPIO (sigla para Gene
 
 A placa Arduino Uno possui os pinos digitais identificados de 0 a 13 e analógicos de A0 a A5. Mas a arquitetura do microcontrolador pode dar outra nomenclatura aos pinos que conhecemos. Confira a placa Arduino Uno em detalhes conforme a próxima figura.
 <p align="center">
-<img src="/img/registradores.png" width="900px"><br>
+<img src="/img/registradores.png" width="500px"><br>
 </p>
 Repare na figura acima que os pinos que conhecemos como digitais estão como Dx (digitais) ou Ax (analógicos), sendo x um número. Porém, ao lado de cada pino há uma outra nomenclatura para acessar os mesmos pinos.
 
@@ -95,7 +95,7 @@ Siglas:
 * Registros: r0, r1, temp1 (r16), temp2 (r17), looplo (r24), loophi (r25), spmcrval (r20)
 
 <p align="center">
-<img src="/img/listaRegistros.PNG" width="900px"><br>
+<img src="/img/listaRegistros.PNG" width="400px"><br>
 </p>
 
 Os registradores R26..R31 têm algumas funções adicionadas aos seus uso de propósito geral. 

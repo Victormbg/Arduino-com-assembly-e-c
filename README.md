@@ -126,7 +126,7 @@ O contador de programas ATmega8 (PC) tem 12 bits de largura, abordando assim os 
 
 # Esquema Led
 <p align="center">
-<img src="/img/led.jpg" width="900px"><br>
+<img src="/img/led.jpg" width="500px"><br>
 </p>
 
 #LINKS:

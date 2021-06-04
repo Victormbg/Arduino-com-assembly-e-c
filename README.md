@@ -95,7 +95,7 @@ Siglas:
 * Registros: r0, r1, temp1 (r16), temp2 (r17), looplo (r24), loophi (r25), spmcrval (r20)
 
 <p align="center">
-<img src="/img/listaRegistros.png" width="900px"><br>
+<img src="/img/listaRegistros.PNG" width="900px"><br>
 </p>
 
 Os registradores R26..R31 têm algumas funções adicionadas aos seus uso de propósito geral. 

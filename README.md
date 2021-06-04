@@ -119,7 +119,7 @@ Significados:
 * Rd e Rr são registros.
 
 * Stack Pointer: O Stack é usado principalmente para armazenar dados temporários, 
-para armazenar variáveis ​​locais e para armazenar endereços de retorno após interrupções e chamadas de sub-rotina.
+para armazenar variáveis locais e para armazenar endereços de retorno após interrupções e chamadas de sub-rotina.
 
 * PC: A memória Flash tem uma resistência de pelo menos 10.000 ciclos de gravação / exclusão.
 O contador de programas ATmega8 (PC) tem 12 bits de largura, abordando assim os locais de memória do programa de 4K.
